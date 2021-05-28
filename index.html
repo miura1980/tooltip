@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ツールチップ</title>
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <div class="content">
+    <h2>説明</h2>
+    <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。<span title="ツールチップのテキストが入ります。" class="tooltip">ツールチップ</span> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。<span title="ツールチップのテキストが入ります。" class="tooltip">ツールチップ</span>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+    <h2>お問い合わせ</h2>
+    <form action="#">
+      <div class="name ly_box">
+        <label for="name">名前</label>
+        <input type="text" id="name" class="ly_size js_area">
+        <span class="js_form_tooltip">全角入力で苗字と名前の間はスペースで開けて下さい。</span>
+      </div>
+      <!-- name -->
+      <div class="email ly_box">
+        <label for="mail">メールアドレス</label>
+        <input type="email" id="mail" class="ly_size js_area">
+        <span class="js_form_tooltip">例）sample@sample.co.jp</span>
+      </div>
+      <!-- email -->
+      <div class="message ly_box">
+        <label for="message">内容</label>
+        <textarea id="message" cols="30" rows="10" class="ly_size js_area" maxlength="200"></textarea>
+        <span class="js_form_tooltip">文字数は200文字以内でお願いします。</span>
+      </div>
+      <!-- message -->
+      <div class="submit ly_box">
+        <input type="submit" value="送信">
+        <input type="reset" value="リセット">
+      </div>
+      <!-- submit -->
+    </form>
+  </div>
+  <!-- content -->
+  <script src="main.js"></script>
+</body>
+</html>

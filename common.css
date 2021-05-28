@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  border-top: 5px solid rgb(0, 0, 0);
+  background: rgb(245, 245, 245);
+}
+
+p {
+  line-height: 2;
+}
+
+.content {
+  max-width: 780px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.ly_box{
+  margin: 5px;
+  position: relative;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  text-align: right;
+}
+
+.ly_size {
+  width: 200px;
+}
+
+textarea{
+  vertical-align: top;
+}
+
+.submit {
+  padding-left: 126px;
+}
+
+.tooltip {
+  border-bottom: 2px dashed rgb(0, 0, 0);
+  position: relative;
+}
+
+.tooltip:hover::after {
+  background: rgba(245, 245, 245);
+  border: solid 2px rgb(0, 0, 0);
+  border-radius: 4px;
+  content: attr(title);
+  padding: 5px;
+  margin: 0;
+  min-width: 300px;
+  position: absolute;
+  left: 0;
+  top: -45px;
+}
+
+.js_form_tooltip {
+  background: rgb(245, 245, 245, 0.9);
+  border: solid 2px rgb(0, 0, 0);
+  border-radius: 4px;
+  padding: 5px;
+  margin: 0;
+  position: absolute;
+  left: 340px;
+  top: -5px;
+  display: none;
+}
